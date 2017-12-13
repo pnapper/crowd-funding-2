@@ -1,0 +1,56 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Funding Project</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Project Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Project Managers:</label>
+        <br>
+        <input #newManagers>
+      </div>
+
+      <div>
+        <label>Project Description:</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
+
+      <div>
+        <label>Funding Goal:</label>
+        <br>
+        <input #newAmount>
+      </div>
+
+      <div>
+        <label>Funding Usage:</label>
+        <br>
+        <textarea #newUsage></textarea>
+      </div>
+
+      <div>
+        <label>Funder Rewards:</label>
+        <br>
+        <textarea #newRewards></textarea>
+      </div>
+
+      <div>
+        <label>Project Type:</label>
+        <br>
+        <select #newType>
+          <option value="Product">Product</option>
+          <option value="Charitable">Charitable</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <br>
+      <button (click)="submitForm(newName.value, newManagers.value, newDescription.value, newAmount.value, newUsage.value, newRewards.value, newType.value)">Add</button>
+    </div>
+  </div>
+</div>
