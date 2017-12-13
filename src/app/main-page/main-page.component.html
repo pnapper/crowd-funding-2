@@ -1,3 +1,7 @@
-<h2>
-  Main Page
-</h2>
+<h2>Main Page</h2>
+
+<div *ngFor="let project of projects" (click)="goToDetailPage(project)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{project.name}}</em> by {{project.managers}}</h3>
+  </div>
+</div>
