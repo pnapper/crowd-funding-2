@@ -1,0 +1,29 @@
+{ "projects": [{
+    "name": "Send Jimmy To Europe",
+    "managers": "Jimmy Needs Cash",
+    "description": "You can be a part of sending Jimmy to Europe.",
+    "amount": "$3,000",
+    "usage": "Money will be used for plane tickets, accomodations, meals, and tours.",
+    "rewards": "Jimmy will send you a postcard and bring you back a t-shirt.",
+    "type": "Charitable",
+    "id": "0"
+  }, {
+    "name": "Pay for my treatment",
+    "managers": "Jamie",
+    "description": "Can you please help pay for my cancer treatment?",
+    "amount": "$10,000",
+    "usage": "Money will be used for chemo-therapy, radiation and surgery.",
+    "rewards": "Jamie will keep you updated on her progress",
+    "type": "Charitable",
+    "id": "1"
+  }, {
+    "name": "GuitarAxe (The guitar that doubles as an actual axe!)",
+    "managers": "GuitarAxe Limited",
+    "description": "Help us take the GuitarAxe from dream to reality!",
+    "amount": "$25,000",
+    "usage": "Money will be used for product development, testing and prototyping.",
+    "rewards": "Donations over $5,000 - GuitarAxe prototype, other donations - GuitarAxe sticker and literature.",
+    "type": "Charitable",
+    "id": "2"
+  }]
+}
