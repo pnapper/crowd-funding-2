@@ -27,9 +27,14 @@ export class ProjectService {
     var projectEntryInFirebase = this.getProjectById(localUpdatedProject.$key);
     projectEntryInFirebase.update({name: localUpdatedProject.name,
                                 amount: localUpdatedProject.amount,
-                                description: localUpdatedProject.description, 
+                                description: localUpdatedProject.description,
                                 usage: localUpdatedProject.usage,
                                 rewards: localUpdatedProject.rewards,
                                 type: localUpdatedProject.type});
+  }
+
+  deleteProject(localProjectToDelete){
+    var projectEntryInFirebase = this.getProjectById(localProjectToDelete.$key);
+    projectEntryInFirebase.remove();
   }
 }
