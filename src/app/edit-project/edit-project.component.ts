@@ -14,6 +14,7 @@ export class EditProjectComponent implements OnInit {
   constructor(private projectService: ProjectService) { }
 
   ngOnInit() {
+    // console.log(this.selectedProject.$key);
   }
 
   beginUpdatingProject(projectToUpdate){

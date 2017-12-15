@@ -1,8 +1,11 @@
 <div>
   <h3>{{(projectToDisplay | async).name}}</h3>
   <h4>{{(projectToDisplay | async).managers}}</h4>
+  <h5>Funds Raised So Far: {{(totalDonation | async)}}</h5>
   <p>{{(projectToDisplay | async).description}}</p>
   <p>Funding Goal: {{(projectToDisplay | async).amount}}</p>
   <p>Funder Rewards: {{(projectToDisplay | async).rewards}}</p>
   <p>Project Type: {{(projectToDisplay | async).type}}</p>
+
 </div>
+  <app-donate [selectedProjectId]="(projectToDisplay | async).$key"></app-donate>

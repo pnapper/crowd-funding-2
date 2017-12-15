@@ -1,0 +1,17 @@
+<h4>Donation To: </h4>
+
+<label>Donor Name:</label>
+<input #newDonor>
+<br>
+
+<label>Donation Amount:</label>
+<input #newAmount>
+<br>
+
+<label>Project ID is : {{selectedProjectId}}</label>
+
+<!-- <input [(ngModel)]="selectedProject.$key"> -->
+<br>
+
+<button (click)="submitForm(newDonor.value, newAmount.value)">Donate</button>
+<hr>

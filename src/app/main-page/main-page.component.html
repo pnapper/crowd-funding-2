@@ -10,10 +10,11 @@
 <div *ngFor="let project of projects | async | projectType:filterByType" class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(project)"><em>{{project.name}}</em> from {{project.managers}}</h3>
+    <h4>Funds Raised So Far: </h4>
     <div *ngIf="currentRoute === '/admin'">
       {{project.description}}
       <br>
-      Amout to be raised: {{project.amount}}
+      Amount to be raised: {{project.amount}}
       <br>
       {{project.usage}}
       <br>
